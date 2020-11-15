@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.myapp.currencyexchange.model;
+package com.myapp.currencyexchangeservice.model;
 
 
 import java.math.BigDecimal;

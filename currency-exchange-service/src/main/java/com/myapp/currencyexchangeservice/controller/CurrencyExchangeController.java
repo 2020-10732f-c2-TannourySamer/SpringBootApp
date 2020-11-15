@@ -1,9 +1,5 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package com.myapp.currencyexchange.controller;
+
+package com.myapp.currencyexchangeservice.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.env.Environment;
@@ -11,8 +7,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.myapp.currencyexchange.model.ExchangeValue;
-import com.myapp.currencyexchange.repository.ExchangeValueRepository;
+import com.myapp.currencyexchangeservice.model.ExchangeValue;
+import com.myapp.currencyexchangeservice.repository.ExchangeValueRepository;
+
 
 @RestController
 public class CurrencyExchangeController {
@@ -28,6 +25,6 @@ public class CurrencyExchangeController {
 		
 		ExchangeValue exchangeValue = repository.findByFromAndTo(from, to);
 		exchangeValue.setPort(Integer.parseInt(environment.getProperty("local.server.port")));
-		return exchangeValue;
+		return exchangeValue;              
 	}
 }
