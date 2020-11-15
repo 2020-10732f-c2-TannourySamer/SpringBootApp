@@ -1,4 +1,4 @@
-package com.myapp.currencyexchange;
+package com.myapp.currencyexchangeservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
