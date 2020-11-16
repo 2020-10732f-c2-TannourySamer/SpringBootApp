@@ -16,12 +16,15 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
+import com.myapp.currencycalculation.facade.CurrencyExchangeProxy;
 import com.myapp.currencycalculation.model.CalculatedAmount;
 
 @RestController
 public class CurrencyCalculationController {
     
-	
+	@Autowired
+	private CurrencyExchangeProxy proxy;	
+    
 	@GetMapping("/currency-converter/from/{from}/to/{to}/quantity/{quantity}")
 	public CalculatedAmount calculateAmount(@PathVariable String from, @PathVariable String to,
 			@PathVariable BigDecimal quantity) {
@@ -39,5 +42,17 @@ public class CurrencyCalculationController {
 	}
 	
 
+        @GetMapping("/currency-converter-feign/from/{from}/to/{to}/quantity/{quantity}")
+	public CalculatedAmount calculateAmountFeign(@PathVariable String from, @PathVariable String to,@PathVariable BigDecimal quantity) {
+		
+		CalculatedAmount calculatedAmount= proxy.retrieveExchangeValue(from, to);
+		
+		System.out.println(calculatedAmount.toString());
+		
+		return new CalculatedAmount(calculatedAmount.getId(), calculatedAmount.getFrom(), 
+				calculatedAmount.getTo(), calculatedAmount.getConversionMultiple(),
+				quantity, quantity.multiply(calculatedAmount.getConversionMultiple()), 
+				calculatedAmount.getPort());
+	}
     
 }
