@@ -23,11 +23,8 @@ Nexflix Eureka Naming Server	8761
 
 # Microservices URLS
 http://localhost:8000/h2/login.jsp?jsessionid=73f29a903343b8cafc51ebbd9989555b
-
 http://lochttp://localhost:8000/currency-exchange/from/EUR/to/USDalhost:8000/currency-exchange/from/EUR/to/USD
-
 http://localhost:8100/currency-converter/from/EUR/to/USD/quantity/500
-
 http://localhost:8761/
 
 # useful cmd command 
