@@ -10,9 +10,13 @@ This is a SpringBoot Project with microservices using Java, Restful webservices,
 
 # Port Configuration
 limits-service	8080,8081..
+
 Spring-cloud-config-server	8888
+
 Currency-exchange-service	8000,8001,8002..
+
 Currency-calculation-Service	8100,8101,8102…
+
 Nexflix Eureka Naming Server	8761
 
 # Basic Architecture
