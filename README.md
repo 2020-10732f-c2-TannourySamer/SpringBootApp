@@ -1,4 +1,4 @@
-# SpringBootApp Currency Exchange Simulator
+# Currency Exchange Simulator
 This is a SpringBoot Project with microservices using Java, Restful webservices, Ribbon Load Balancing, H2 Database and Eureka server.
 
 # Microservices implemented 
