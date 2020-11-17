@@ -24,4 +24,4 @@ http://localhost:8100/currency-converter/from/EUR/to/USD/quantity/500
 
 http://localhost:8761/
 
-![Screenshot](screenshot.png)
+![Screenshot](https://github.com/2020-10732f-c2-TannourySamer/SpringBootApp/blob/master/screenshot.PNG)
