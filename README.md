@@ -15,6 +15,12 @@ Currency-exchange-service	8000,8001,8002..
 Currency-calculation-Service	8100,8101,8102…
 Nexflix Eureka Naming Server	8761
 
+# Basic Architecture
+![Screenshot](https://github.com/2020-10732f-c2-TannourySamer/SpringBootApp/blob/master/screenshot1.PNG)
+
+# Microservices with Eureka server
+![Screenshot](https://github.com/2020-10732f-c2-TannourySamer/SpringBootApp/blob/master/screenshot.PNG)
+
 # Microservices URLS
 http://localhost:8000/h2/login.jsp?jsessionid=73f29a903343b8cafc51ebbd9989555b
 
@@ -24,9 +30,6 @@ http://localhost:8100/currency-converter/from/EUR/to/USD/quantity/500
 
 http://localhost:8761/
 
-# Basic Architecture
-![Screenshot](https://github.com/2020-10732f-c2-TannourySamer/SpringBootApp/blob/master/screenshot1.PNG)
-
-# Microservices with Eureka server
-![Screenshot](https://github.com/2020-10732f-c2-TannourySamer/SpringBootApp/blob/master/screenshot.PNG)
-
+# useful cmd command 
+netstat -ao |find /i "listening"
+Taskkill /F /IM {Port related Task ID}
