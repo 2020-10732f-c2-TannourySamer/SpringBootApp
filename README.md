@@ -24,4 +24,9 @@ http://localhost:8100/currency-converter/from/EUR/to/USD/quantity/500
 
 http://localhost:8761/
 
+# Basic Architecture
+![Screenshot](https://github.com/2020-10732f-c2-TannourySamer/SpringBootApp/blob/master/screenshot1.PNG)
+
+# Microservices with Eureka server
 ![Screenshot](https://github.com/2020-10732f-c2-TannourySamer/SpringBootApp/blob/master/screenshot.PNG)
+
