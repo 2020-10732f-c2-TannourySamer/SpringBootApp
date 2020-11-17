@@ -30,6 +30,9 @@ http://localhost:8100/currency-converter/from/EUR/to/USD/quantity/500
 
 http://localhost:8761/
 
+# Eureka server UI
+![Screenshot](https://github.com/2020-10732f-c2-TannourySamer/SpringBootApp/blob/master/EurekaServer.PNG)
+
 # useful cmd command 
 netstat -ao |find /i "listening"
 
